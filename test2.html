@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>これはプルリクエストテストの為のページです</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f5f5f5;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .box {
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            background: #0078ff;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005fcc;
+        }
+
+        #log {
+            margin-top: 20px;
+            padding: 10px;
+            background: #eee;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>テスト用 Index</h1>
+
+    <div class="box">
+        <p>HTML / CSS / JavaScript の動作確認用ページです。</p>
+
+        <button onclick="testAction()">クリックテスト</button>
+
+        <div id="log">ここにログが表示されます。</div>
+    </div>
+
+    <script>
+        function testAction() {
+            const log = document.getElementById("log");
+            log.textContent = "ボタンが押されました！";
+
+            console.log("ボタンが押されたよ（コンソールログ）");
+        }
+    </script>
+
+</body>
+</html>
